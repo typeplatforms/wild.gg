@@ -337,3 +337,6 @@ footer {
         flex-direction: column;
     }
 }
+.setup .button {
+    margin-top: 25px;
+}
