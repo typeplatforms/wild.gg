@@ -31,10 +31,6 @@ a {
     text-decoration: none;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
-
 .navbar {
     width: 100%;
     height: 72px;
@@ -53,7 +49,6 @@ a {
     gap: 10px;
     font-size: 20px;
     font-weight: 800;
-    letter-spacing: -0.5px;
 }
 
 .logo-mark {
@@ -99,10 +94,6 @@ nav a:hover {
     background: var(--accent-hover);
     transform: translateY(-1px);
 }
-
-/* =========================
-   HERO
-========================= */
 
 .hero {
     min-height: 650px;
@@ -151,10 +142,6 @@ nav a:hover {
     gap: 12px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
-
 .button {
     display: inline-flex;
     align-items: center;
@@ -166,38 +153,28 @@ nav a:hover {
     font-weight: 700;
     font-size: 14px;
     cursor: pointer;
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: 0.2s ease;
 }
 
 .button.primary {
     background: var(--accent);
     color: white;
-    box-shadow: 0 8px 25px rgba(124, 92, 255, 0.22);
 }
 
 .button.primary:hover {
     background: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(124, 92, 255, 0.32);
 }
 
 .button.secondary {
     border: 1px solid var(--border);
     background: var(--surface);
-    color: var(--text);
 }
 
 .button.secondary:hover {
     background: var(--surface-hover);
     transform: translateY(-2px);
 }
-
-/* =========================
-   SECTIONS
-========================= */
 
 .section {
     max-width: 1150px;
@@ -229,10 +206,6 @@ nav a:hover {
     color: var(--muted);
 }
 
-/* =========================
-   FEATURE CARDS
-========================= */
-
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -244,15 +217,11 @@ nav a:hover {
     border: 1px solid var(--border);
     border-radius: 14px;
     background: var(--surface);
-    transition:
-        background 0.25s ease,
-        transform 0.25s ease,
-        border-color 0.25s ease;
+    transition: 0.25s ease;
 }
 
 .feature-card:hover {
     background: var(--surface-hover);
-    border-color: #303542;
     transform: translateY(-4px);
 }
 
@@ -273,10 +242,6 @@ nav a:hover {
     font-size: 14px;
 }
 
-/* =========================
-   ABOUT
-========================= */
-
 .about {
     max-width: 800px;
     text-align: center;
@@ -286,21 +251,21 @@ nav a:hover {
     margin-top: 15px;
 }
 
-/* =========================
-   SETUP
-========================= */
-
 .setup {
     text-align: center;
 }
 
-.setup .button {
-    margin-top: 28px;
+.setup .section-heading {
+    margin-bottom: 0;
 }
 
-/* =========================
-   FOOTER
-========================= */
+.setup .section-heading p {
+    margin-bottom: 0;
+}
+
+.setup .button {
+    margin-top: 50px;
+}
 
 footer {
     padding: 35px 7%;
@@ -327,10 +292,6 @@ footer {
     gap: 20px;
 }
 
-.footer-links a {
-    transition: color 0.2s ease;
-}
-
 .footer-links a:hover {
     color: var(--text);
 }
@@ -339,12 +300,7 @@ footer {
     white-space: nowrap;
 }
 
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 700px) {
-
     .navbar {
         padding: 0 20px;
     }
